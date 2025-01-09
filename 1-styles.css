@@ -1,0 +1,25 @@
+* {
+    font-family: serif;
+    font-weight: bold;
+}
+
+h2 a {
+    color: rgb(138, 9, 9);
+    position: relative;
+    text-decoration: none;
+}
+
+h2 a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    transition: width .3s ease;
+    background-color: rgb(138, 9, 9);
+}
+
+h2 a:hover::after {
+    width: 100%;
+}
